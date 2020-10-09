@@ -1,0 +1,7 @@
+
+<div class="owl-carousel owl-theme">
+    <div class="item" *ngFor="let phim of danhSachPhim | slice: 0:5">
+        <app-item-phim [Phim]=phim></app-item-phim>
+    </div>
+</div>
+

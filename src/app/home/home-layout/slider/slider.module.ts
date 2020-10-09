@@ -1,0 +1,20 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { SliderComponent } from './slider.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselItemComponent } from './carousel-item/carousel-item.component'
+import { SharingModule } from '../../../core/sharing/sharing.module'
+
+@NgModule({
+  declarations: [ SliderComponent, CarouselComponent, CarouselItemComponent ],
+  imports: [
+    CommonModule,
+    SharingModule
+  ],
+  exports: [
+    SliderComponent,
+    CarouselComponent,
+    CarouselItemComponent 
+  ]
+})
+export class SliderModule { }
